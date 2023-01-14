@@ -41,17 +41,67 @@
       <section class="hero section">
         <div class="container">
           <div class="hero-picture">
-          <img
-            srcset="
-              ./images/375/hero-picture_289.png     289w,
-              ./images/1180/hero-picture_620.png    620w,
-              ./images/375/hero-picture_289@2.png   578w,
-              ./images/1180/hero-picture_620@2.png 1240w
-            "
-            sizes="(min-width: 1180px) 620px, (min-width: 768px) 620px, (min-width: 320) 289px, 100vw"
-            src="./images/375/hero-picture_289.png"
-            alt="Diagram"
-          />
+            <img
+              srcset="
+                ./images/375/hero-picture_289.png     289w,
+                ./images/1180/hero-picture_620.png    620w,
+                ./images/375/hero-picture_289@2.png   578w,
+                ./images/1180/hero-picture_620@2.png 1240w
+              "
+              sizes="(min-width: 1180px) 620px, (min-width: 768px) 620px, (min-width: 320px) 289px, 100vw"
+              src="./images/375/hero-picture_289.png"
+              alt="Diagram"
+            />
+
+            <ul class="cryptocurrency">
+              <li class="cryptocurrency__item cryptocurrency__item--binance">
+                <div class="cryptocurrency__box">
+                  <p class="cryptocurrency__title">Binance Coin</p>
+                  <div
+                    class="iconset-svg iconset-svg__binance iconset-svg__binance--deg"
+                  >
+                    <svg width="8" height="6">
+                      <use href="./images/icon.svg#icon-binance"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="cryptocurrency__price">$282,63</p>
+              </li>
+              <li class="cryptocurrency__item cryptocurrency__item--ethereum">
+                <div class="cryptocurrency__box">
+                  <p class="cryptocurrency__title">Ethereum</p>
+                  <div class="ethereum">
+                    <svg width="7" height="7">
+                      <use href="./images/icon.svg#icon-ethereum"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="cryptocurrency__price">$1.812,56</p>
+                <div class="percent-block">
+                  <p class="percent-ethereum">+0,8%</p>
+                </div>
+              </li>
+              <li class="cryptocurrency__item cryptocurrency__item--bitcoin">
+                <div class="cryptocurrency__box">
+                  <p class="cryptocurrency__title">Bitcoin</p>
+                  <div class="iconset-svg iconset-svg__bitcoin">
+                    <svg width="6" height="6">
+                      <use href="./images/icon.svg#icon-bitcoin"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="percent-box">
+                  <p class="cryptocurrency__price">$53.863,9</p>
+                  <svg width="28" height="16" class="diagram">
+                    <use href="./images/icon.svg#icon-diagram"></use>
+                  </svg>
+                  <div class="percent-block-bitcoin">
+                    <p class="percent-bitcoin">-2,5%</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

@@ -1,6 +1,136 @@
+.hero {
+  padding-top: 20px;
+}
+
 .hero-picture {
   @include tablet {
     display: flex;
     justify-content: center;
   }
+
+  position: relative;
+}
+
+.cryptocurrency {
+  &__item {
+    box-shadow: (1.50111px 1.50111px 19.8802px rgba(50, 95, 253, 0.05));
+    border-radius: 5px;
+    background-color: #fff;
+
+    &:not(:last-child) {
+      transform: rotate(15deg);
+    }
+
+    &--binance {
+      position: absolute;
+      // top: -32px;
+      // right: 20px;
+      top: -10%;
+      right: 8%;
+      width: 92px;
+      height: 60px;
+      padding: 9px 28px 17px 10px;
+      z-index: 111;
+    }
+
+    &--ethereum {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70px;
+      height: 72px;
+      padding: 10px 10px 11px 10px;
+    }
+
+    &--bitcoin {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 140px;
+      height: 40px;
+    }
+  }
+
+  &__box {
+    display: flex;
+  }
+
+  &__title {
+    @include font(7px, 700, 1.4);
+
+    color: #2a2740;
+  }
+
+  &__price {
+    @include font(11px, 700, 1.4);
+
+    color: #2a2740;
+  }
+}
+
+.percent-block {
+  width: 24px;
+  height: 14px;
+  background: rgba(51, 170, 84, 0.2);
+  border-radius: 3px;
+}
+
+.percent-ethereum {
+  @include font(5px, 700, 1.4);
+
+  padding: 4px 5px;
+  color: #79f09a;
+}
+
+.percent-box {
+  display: flex;
+}
+
+.percent-block-bitcoin {
+  width: 20px;
+  height: 11px;
+  border-radius: 3px;
+  background-color: rgba(170, 65, 51, 0.2);
+  margin-left: 15px;
+}
+
+.diagram {
+  margin-left: 14px;
+}
+
+.percent-bitcoin {
+  @include font(4px, 700, 1.5);
+
+  color: #c61515;
+  padding: 3px 4px;
+}
+
+.iconset-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left: 3px;
+
+  &__binance {
+    background: #f3ba2f;
+    fill: #fff;
+
+    &--deg {
+      transform: rotate(15deg);
+    }
+  }
+
+  &__bitcoin {
+    background: linear-gradient(180deg, #f9aa4b -0.02%, #f7931a 99.99%);
+    fill: #312e52;
+  }
+}
+
+.ethereum {
+  display: flex;
+  margin-left: 3px;
+  transform: rotate(15deg);
 }
