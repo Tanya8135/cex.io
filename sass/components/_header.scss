@@ -1,0 +1,31 @@
+.header-box {
+  display: flex;
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.btn-burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: black;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid $circle-btn-green;
+  border-radius: 50%;
+  height: 34px;
+  width: 34px;
+}
+
+.logo {
+  @include font(20px, 700, 1.35);
+  color: $logo-text-color;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.logo-accent {
+  color: $logo-span-color;
+  text-transform: none;
+}

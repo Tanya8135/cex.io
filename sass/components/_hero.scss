@@ -1,0 +1,6 @@
+.hero-picture {
+  @include tablet {
+    display: flex;
+    justify-content: center;
+  }
+}
