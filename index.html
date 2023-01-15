@@ -53,7 +53,11 @@
               alt="Diagram"
             /> -->
 
-            <img src="./images/picture.svg" alt="" />
+            <img srcset="./images/picture.svg 289w,
+            ./images/picture_620.svg 620w"
+
+            sizes="(min-width: 1180px) 620px, (min-width: 768px) 620px, (min-width: 320px) 298px, 100vw"
+            src="./images/picture.svg" alt="Diagram" />
 
             <ul class="cryptocurrency">
               <li class="cryptocurrency__item cryptocurrency__item--binance">
@@ -98,9 +102,8 @@
                   <svg width="28" height="16" class="percent-box__diagram">
                     <use href="./images/icon.svg#icon-diagram"></use>
                   </svg>
-                  <div class="percent-box__block">
                     <p class="percent-box__bitcoin">-2,5%</p>
-                  </div>
+                </div>
                 </div>
               </li>
             </ul>

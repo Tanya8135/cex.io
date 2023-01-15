@@ -227,7 +227,7 @@ p {
   padding: 3px 4px;
 }
 
-.percent-box__block::before {
+.percent-box__bitcoin::before {
   position: absolute;
   top: 0px;
   right: 9px;
@@ -294,7 +294,8 @@ p {
 }
 @media screen and (min-width: 768px) and (max-width: 1920px) {
   .container {
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     max-width: 1180px;
   }
 }

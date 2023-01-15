@@ -3,10 +3,6 @@
 }
 
 .hero-picture {
-  // @include tablet {
-  //   width: 620px;
-  // }
-
   @include desktop {
     width: 620px;
   }
@@ -112,7 +108,7 @@
   }
 }
 
-.percent-box__block::before {
+.percent-box__bitcoin::before {
   position: absolute;
   top: 0px;
   right: 9px;
