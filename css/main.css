@@ -276,6 +276,19 @@ p {
   fill: #312e52;
 }
 
+.heading__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #333333;
+}
+.heading__title--accent {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(91.57deg, #10a399 41.15%, #32d3c9 85.26%);
+}
+
 .container {
   width: 100%;
   margin: 0 auto;

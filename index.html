@@ -38,6 +38,7 @@
     </header>
 
     <main class="main">
+      <!-- Hero -->
       <section class="hero section">
         <div class="container">
           <div class="hero-picture">
@@ -53,11 +54,15 @@
               alt="Diagram"
             /> -->
 
-            <img srcset="./images/picture.svg 289w,
-            ./images/picture_620.svg 620w"
-
-            sizes="(min-width: 1180px) 620px, (min-width: 768px) 620px, (min-width: 320px) 298px, 100vw"
-            src="./images/picture.svg" alt="Diagram" />
+            <img
+              srcset="
+                ./images/375/hero-picture_289.svg  289w,
+                ./images/1180/hero-picture_620.svg 620w
+              "
+              sizes="(min-width: 1180px) 620px, (min-width: 768px) 620px, (min-width:320px) 298px, 100vw"
+              src="./images/375/hero-picture_289.svg"
+              alt="Diagram"
+            />
 
             <ul class="cryptocurrency">
               <li class="cryptocurrency__item cryptocurrency__item--binance">
@@ -102,12 +107,20 @@
                   <svg width="28" height="16" class="percent-box__diagram">
                     <use href="./images/icon.svg#icon-diagram"></use>
                   </svg>
-                    <p class="percent-box__bitcoin">-2,5%</p>
-                </div>
+                  <p class="percent-box__bitcoin">-2,5%</p>
                 </div>
               </li>
             </ul>
           </div>
+          <h1 class="heading__title">
+            Machen Sie das <span class="heading__title--accent">Beste</span> aus den Marktbewegungen
+          </h1>
+          <p class="heading__text">
+            Nutzen Sie eine breite Palette von Anlagemöglichkeiten,
+            benutzerfreundlichen Handelsinstrumenten und Markteinblicken, die
+            Ihnen bei der Umsetzung Ihrer Handelsstrategien helfen. Verdienen
+            Sie Zinsen auf der Grundlage Ihres Kontoplans, ohne Sperrfrist.
+          </p>
         </div>
       </section>
     </main>
