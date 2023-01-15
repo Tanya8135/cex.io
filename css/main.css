@@ -213,16 +213,11 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-.percent-box__block {
-  width: 20px;
-  height: 11px;
-  border-radius: 3px;
-  background-color: rgba(170, 65, 51, 0.2);
-  margin-left: 10px;
+  position: relative;
 }
 .percent-box__diagram {
   margin-left: 10px;
+  margin-right: 10px;
 }
 .percent-box__bitcoin {
   font-size: 4px;
@@ -230,6 +225,18 @@ p {
   line-height: 1.5;
   color: #c61515;
   padding: 3px 4px;
+}
+
+.percent-box__block::before {
+  position: absolute;
+  top: 0px;
+  right: 9px;
+  width: 20px;
+  height: 11px;
+  border-radius: 3px;
+  background-color: rgba(170, 65, 51, 0.2);
+  margin-left: 10px;
+  content: " ";
 }
 
 .iconset-svg {
