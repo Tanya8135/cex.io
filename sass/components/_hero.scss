@@ -3,12 +3,17 @@
 }
 
 .hero-picture {
-  @include tablet {
-    display: flex;
-    justify-content: center;
+  // @include tablet {
+  //   width: 620px;
+  // }
+
+  @include desktop {
+    width: 620px;
   }
 
   position: relative;
+  width: 298px;
+  margin: 0 auto;
 }
 
 .cryptocurrency {
@@ -23,20 +28,18 @@
 
     &--binance {
       position: absolute;
-      // top: -32px;
-      // right: 20px;
-      top: -10%;
-      right: 8%;
+      top: -32px;
+      right: 5px;
       width: 92px;
       height: 60px;
-      padding: 9px 28px 17px 10px;
+      padding: 9px 15px 17px 10px;
       z-index: 111;
     }
 
     &--ethereum {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 110px;
+      right: -10px;
       width: 70px;
       height: 72px;
       padding: 10px 10px 11px 10px;
@@ -44,10 +47,11 @@
 
     &--bitcoin {
       position: absolute;
-      top: 0;
-      left: 0;
+      bottom: 15px;
+      left: 70px;
       width: 140px;
       height: 40px;
+      padding: 9px 0 10px 14px;
     }
   }
 
@@ -59,6 +63,7 @@
     @include font(7px, 700, 1.4);
 
     color: #2a2740;
+    margin-bottom: 3px;
   }
 
   &__price {
@@ -73,36 +78,36 @@
   height: 14px;
   background: rgba(51, 170, 84, 0.2);
   border-radius: 3px;
-}
 
-.percent-ethereum {
-  @include font(5px, 700, 1.4);
+  &__ethereum {
+    @include font(5px, 700, 1.4);
 
-  padding: 4px 5px;
-  color: #79f09a;
+    padding: 4px 5px;
+    color: #79f09a;
+  }
 }
 
 .percent-box {
   display: flex;
-}
 
-.percent-block-bitcoin {
-  width: 20px;
-  height: 11px;
-  border-radius: 3px;
-  background-color: rgba(170, 65, 51, 0.2);
-  margin-left: 15px;
-}
+  &__block {
+    width: 20px;
+    height: 11px;
+    border-radius: 3px;
+    background-color: rgba(170, 65, 51, 0.2);
+    margin-left: 10px;
+  }
 
-.diagram {
-  margin-left: 14px;
-}
+  &__diagram {
+    margin-left: 10px;
+  }
 
-.percent-bitcoin {
-  @include font(4px, 700, 1.5);
+  &__bitcoin {
+    @include font(4px, 700, 1.5);
 
-  color: #c61515;
-  padding: 3px 4px;
+    color: #c61515;
+    padding: 3px 4px;
+  }
 }
 
 .iconset-svg {
@@ -123,14 +128,14 @@
     }
   }
 
+  &__ethereum {
+    display: flex;
+    margin-left: 3px;
+    transform: rotate(15deg);
+  }
+
   &__bitcoin {
     background: linear-gradient(180deg, #f9aa4b -0.02%, #f7931a 99.99%);
     fill: #312e52;
   }
-}
-
-.ethereum {
-  display: flex;
-  margin-left: 3px;
-  transform: rotate(15deg);
 }

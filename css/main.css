@@ -132,15 +132,12 @@ p {
 
 .hero-picture {
   position: relative;
+  width: 298px;
+  margin: 0 auto;
 }
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1920px) {
   .hero-picture {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 620px;
   }
 }
 
@@ -156,27 +153,28 @@ p {
 }
 .cryptocurrency__item--binance {
   position: absolute;
-  top: -10%;
-  right: 8%;
+  top: -32px;
+  right: 5px;
   width: 92px;
   height: 60px;
-  padding: 9px 28px 17px 10px;
+  padding: 9px 15px 17px 10px;
   z-index: 111;
 }
 .cryptocurrency__item--ethereum {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 110px;
+  right: -10px;
   width: 70px;
   height: 72px;
   padding: 10px 10px 11px 10px;
 }
 .cryptocurrency__item--bitcoin {
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 15px;
+  left: 70px;
   width: 140px;
   height: 40px;
+  padding: 9px 0 10px 14px;
 }
 .cryptocurrency__box {
   display: -webkit-box;
@@ -188,6 +186,7 @@ p {
   font-weight: 700;
   line-height: 1.4;
   color: #2a2740;
+  margin-bottom: 3px;
 }
 .cryptocurrency__price {
   font-size: 11px;
@@ -202,8 +201,7 @@ p {
   background: rgba(51, 170, 84, 0.2);
   border-radius: 3px;
 }
-
-.percent-ethereum {
+.percent-block__ethereum {
   font-size: 5px;
   font-weight: 700;
   line-height: 1.4;
@@ -216,20 +214,17 @@ p {
   display: -ms-flexbox;
   display: flex;
 }
-
-.percent-block-bitcoin {
+.percent-box__block {
   width: 20px;
   height: 11px;
   border-radius: 3px;
   background-color: rgba(170, 65, 51, 0.2);
-  margin-left: 15px;
+  margin-left: 10px;
 }
-
-.diagram {
-  margin-left: 14px;
+.percent-box__diagram {
+  margin-left: 10px;
 }
-
-.percent-bitcoin {
+.percent-box__bitcoin {
   font-size: 4px;
   font-weight: 700;
   line-height: 1.5;
@@ -260,19 +255,18 @@ p {
   -webkit-transform: rotate(15deg);
           transform: rotate(15deg);
 }
-.iconset-svg__bitcoin {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(-0.02%, #f9aa4b), color-stop(99.99%, #f7931a));
-  background: linear-gradient(180deg, #f9aa4b -0.02%, #f7931a 99.99%);
-  fill: #312e52;
-}
-
-.ethereum {
+.iconset-svg__ethereum {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 3px;
   -webkit-transform: rotate(15deg);
           transform: rotate(15deg);
+}
+.iconset-svg__bitcoin {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-0.02%, #f9aa4b), color-stop(99.99%, #f7931a));
+  background: linear-gradient(180deg, #f9aa4b -0.02%, #f7931a 99.99%);
+  fill: #312e52;
 }
 
 .container {

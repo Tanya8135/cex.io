@@ -27,7 +27,7 @@
     <header class="header">
       <div class="container header-box">
         <button type="button" class="btn-burger">
-          <svg width="24" height="24" class="test">
+          <svg width="24" height="24">
             <use href="./images/icon.svg#icon-burger-menu"></use>
           </svg>
         </button>
@@ -41,7 +41,7 @@
       <section class="hero section">
         <div class="container">
           <div class="hero-picture">
-            <img
+            <!-- <img
               srcset="
                 ./images/375/hero-picture_289.png     289w,
                 ./images/1180/hero-picture_620.png    620w,
@@ -51,7 +51,9 @@
               sizes="(min-width: 1180px) 620px, (min-width: 768px) 620px, (min-width: 320px) 289px, 100vw"
               src="./images/375/hero-picture_289.png"
               alt="Diagram"
-            />
+            /> -->
+
+            <img src="./images/picture.svg" alt="" />
 
             <ul class="cryptocurrency">
               <li class="cryptocurrency__item cryptocurrency__item--binance">
@@ -70,7 +72,7 @@
               <li class="cryptocurrency__item cryptocurrency__item--ethereum">
                 <div class="cryptocurrency__box">
                   <p class="cryptocurrency__title">Ethereum</p>
-                  <div class="ethereum">
+                  <div class="iconset-svg__ethereum">
                     <svg width="7" height="7">
                       <use href="./images/icon.svg#icon-ethereum"></use>
                     </svg>
@@ -78,7 +80,7 @@
                 </div>
                 <p class="cryptocurrency__price">$1.812,56</p>
                 <div class="percent-block">
-                  <p class="percent-ethereum">+0,8%</p>
+                  <p class="percent-block__ethereum">+0,8%</p>
                 </div>
               </li>
               <li class="cryptocurrency__item cryptocurrency__item--bitcoin">
@@ -93,11 +95,11 @@
 
                 <div class="percent-box">
                   <p class="cryptocurrency__price">$53.863,9</p>
-                  <svg width="28" height="16" class="diagram">
+                  <svg width="28" height="16" class="percent-box__diagram">
                     <use href="./images/icon.svg#icon-diagram"></use>
                   </svg>
-                  <div class="percent-block-bitcoin">
-                    <p class="percent-bitcoin">-2,5%</p>
+                  <div class="percent-box__block">
+                    <p class="percent-box__bitcoin">-2,5%</p>
                   </div>
                 </div>
               </li>
